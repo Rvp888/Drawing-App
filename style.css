@@ -23,3 +23,23 @@ body {
     border-radius: 50px;
     box-shadow: 0 0 5px 5px white;
 }
+
+/* Inputs container */
+.inputContainer {
+    width: 200px;
+    margin: 0 auto;
+}
+
+/* color & line-thickness input and slider */
+.input {
+    height: 30px;
+    font-size: 1.3em;
+}
+
+#circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 0 auto;
+}
