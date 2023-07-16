@@ -10,6 +10,10 @@ body {
 #header {
     font-family: cursive;
     background: linear-gradient(#eff303, rgba(68, 132, 68, 0.971), rgba(255, 68, 0, 0.851), rgb(85, 117, 245));
+    background: -webkit-linear-gradient(#eff303, rgba(68, 132, 68, 0.971), rgba(255, 68, 0, 0.851), rgb(85, 117, 245));
+    background: -moz-linear-gradient(#eff303, rgba(68, 132, 68, 0.971), rgba(255, 68, 0, 0.851), rgb(85, 117, 245));
+    background: -o-linear-gradient(#eff303, rgba(68, 132, 68, 0.971), rgba(255, 68, 0, 0.851), rgb(85, 117, 245));
+    background: -ms-linear-gradient(#eff303, rgba(68, 132, 68, 0.971), rgba(255, 68, 0, 0.851), rgb(85, 117, 245));
     height: 80px;
     width: 500px;
     margin: 10px auto;
