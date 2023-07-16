@@ -1,0 +1,7 @@
+/* center all elements and add background image */
+body {
+    background: url(images/Bg-6.jpg) no-repeat center center;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    text-align: center;
+}
