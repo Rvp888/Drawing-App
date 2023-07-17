@@ -61,5 +61,20 @@ $(function() {
         paint = false;
     });
 
+    // if we leave the container, then also we are not painting or erasing
+    container.mouseleave(function() {
+        paint = false;
+    });
+
+    // click on the erase button
+    $("#erase").click(function() {
+        if (paint_erase == "paint") {
+            paint_erase = "erase";
+        }
+        else {
+            paint_erase = "paint";
+        }
+    });
+
 
 });
