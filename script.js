@@ -42,7 +42,7 @@ $(function() {
         if (paint == true) {
             if(paint_erase == "paint") {
                 // get color input
-                context.strokeStyle = "red";
+                context.strokeStyle = $("#paintColor").val();
             }
             else { //paint_erase == "erase"
                 // color input = white
@@ -93,7 +93,9 @@ $(function() {
     });
 
     // change color input
-
+    $("#paintColor").change(function() {
+        $("#circle").css("background-color", $(this).val());
+    });
 
     // change lineWidth using slider
     $("#slider").slider({
