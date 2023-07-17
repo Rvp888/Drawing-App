@@ -62,10 +62,15 @@ body {
 
 /* Canvas Container */
 #container {
-    width: 500px;
-    height: 400px;
+    width: 570px;
+    height: 470px;
     border: 1px solid rgba(122, 174, 229, 0.5);
     margin: 10px auto;
+}
+
+#paint {
+    background-color: #fff;
+    cursor: crosshair;
 }
 
 /* input Container 2 */
@@ -85,7 +90,12 @@ body {
 }
 
 .button {
-    background-color: #fff;
+    color: #fff;
+    background: linear-gradient(#070707, rgba(67, 169, 228, 0.9));
+    background: -webkit-linear-gradient(#070707, rgba(67, 169, 228, 0.9));
+    background: -moz-linear-gradient(#070707, rgba(67, 169, 228, 0.9));
+    background: -o-linear-gradient(#070707, rgba(67, 169, 228, 0.9));
+    background: -ms-linear-gradient(#070707, rgba(67, 169, 228, 0.9));
     height: 50px;
     padding: 10px;
     border-radius: 3px;
@@ -98,12 +108,9 @@ body {
 }
 
 .button:hover {
-    color: #fff;
-    background: linear-gradient(#fff, rgba(67, 169, 228, 0.9));
-    background: -webkit-linear-gradient(#fff, rgba(67, 169, 228, 0.9));
-    background: -moz-linear-gradient(#fff, rgba(67, 169, 228, 0.9));
-    background: -o-linear-gradient(#fff, rgba(67, 169, 228, 0.9));
-    background: -ms-linear-gradient(#fff, rgba(67, 169, 228, 0.9));
+    color: #03598c;
+    background: linear-gradient(#fff, #7dc6f0);
+    /* border: 1px solid #03598c; */
 }
 
 .button:active {
