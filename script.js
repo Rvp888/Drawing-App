@@ -23,6 +23,13 @@ $(function() {
     let mouse = {x: 0, y: 0};
 
     // Onload, load the saved work from local storage
+    if (localStorage.getItem("imgCanvas") != null) {
+        let img = new Image();
+        img.onload = function() {
+            context.drawImage(img, 0, 0);
+        }
+        img.src = localStorage.getItem("imgCanvas");
+    }
 
     // set drawing parameters (lineWidth, lineJoin, lineCap)
     context.lineWidth = 3;
@@ -78,7 +85,14 @@ $(function() {
     });
 
     // click on the save button
-
+    $("#save").click(function() {
+        if (typeof(localStorage) != null) {
+            localStorage.setItem("imgCanvas", canvas.toDataURL());
+        }
+        else {
+            window.alert("Your browser does not support local storage!");
+        }
+    });
 
     // click on the reset button
     $("#reset").click(function() {
