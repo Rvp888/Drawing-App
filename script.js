@@ -99,6 +99,7 @@ $(function() {
         context.clearRect(0, 0, canvas.width, canvas.height);
         paint_erase = "paint";
         $("#erase").removeClass("eraseMode");
+        localStorage.clear();
     });
 
 
