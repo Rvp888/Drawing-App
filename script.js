@@ -1,16 +1,6 @@
 
 $(function() {
 
-    $("#slider").slider({
-        min: 3,
-        max: 30,
-        slide: function(event, ui) {
-            $("#circle").height(ui.value);
-            $("#circle").width(ui.value);
-        }
-    });
-
-
     // Declare variables
     let paint = false; // paintingORerasing or not
     let paint_erase = "paint"; // painting or erasing
@@ -100,6 +90,20 @@ $(function() {
         paint_erase = "paint";
         $("#erase").removeClass("eraseMode");
         localStorage.clear();
+    });
+
+    // change color input
+
+
+    // change lineWidth using slider
+    $("#slider").slider({
+        min: 3,
+        max: 30,
+        slide: function(event, ui) {
+            $("#circle").height(ui.value);
+            $("#circle").width(ui.value);
+            context.lineWidth = ui.value;
+        }
     });
 
 
