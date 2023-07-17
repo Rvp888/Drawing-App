@@ -74,7 +74,19 @@ $(function() {
         else {
             paint_erase = "paint";
         }
+        $(this).toggleClass("eraseMode");
+    });
+
+    // click on the save button
+
+
+    // click on the reset button
+    $("#reset").click(function() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+        paint_erase = "paint";
+        $("#erase").removeClass("eraseMode");
     });
 
 
 });
+
